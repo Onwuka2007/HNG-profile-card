@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card - HNG Stage 0</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <figure>
+        <div>
+          <img
+            id="avatarImg"
+            src="https://media.istockphoto.com/id/2151669184/vector/vector-flat-illustration-in-grayscale-avatar-user-profile-person-icon-gender-neutral.jpg?s=612x612&w=0&k=20&c=UEa7oHoOL30ynvmJzSCIPrwwopJdfqzBs0q69ezQoM8="
+            alt="Your Avatar"
+            data-testid="test-user-avatar"
+          />
+          <figcaption>User Image</figcaption>
+        </div>
+
+        <div>
+          <div class="controls">
+            <label class="small" for="avatarUrl">Paste image URL</label>
+            <input
+              id="avatarUrl"
+              type="url"
+              placeholder="https://yourimage..."
+            />
+            <button id="useUrlBtn">Use URL</button>
+
+            <label class="small" for="avatarFile"><br />Or upload image</label>
+            <input id="avatarFile" type="file" accept="image/*" />
+          </div>
+        </div>
+      </figure>
+      <hr data-testid="test-horizontal-line" />
+
+      <div>
+        <h2 data-testid="test-user-name">Onwuka Emmanuel</h2>
+
+        <p data-testid="test-user-bio">
+          I am a We Developer with 1+ years of experience in creating and
+          managing websites. My skills include coding in HTML/CSS, Tailwind CSS,
+          JavaScript.
+        </p>
+
+        <p>
+          <b>Time:</b>
+          <span id="timeMs" data-testid="test-user-time">0</span>
+        </p>
+
+        <nav data-testid="test-user-social-links">
+          <ul>
+            <li data-testid="test-user-social-instagram">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li data-testid="test-user-social-linkedin">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkedin"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li data-testid="test-user-social-github">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- hobbies in ul lists-->
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Football</li>
+            <li>Coding</li>
+            <li>Creating</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Idleness</li>
+            <li>Theft</li>
+            <li>Lies</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
